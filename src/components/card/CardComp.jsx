@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import john from '../../assests/img/image-john.jpg';
 import tanya from '../../assests/img/image-tanya.jpg';
 
+import { MdOutlineKeyboardArrowLeft } from 'react-icons/md';
+import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
+
 const CardComp = () => {
   const [isActive, setIsActive] = useState(true);
   return (
@@ -39,8 +42,12 @@ const CardComp = () => {
         {isActive ? <img src={tanya} alt='' /> : <img src={john} alt='' />}
 
         <div>
-          <button></button>
-          <button></button>
+          <button>
+            <MdOutlineKeyboardArrowLeft />
+          </button>
+          <button>
+            <MdOutlineKeyboardArrowRight />
+          </button>
         </div>
       </div>
     </div>
