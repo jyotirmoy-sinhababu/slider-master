@@ -59,10 +59,10 @@ const CardComp = () => {
           </div>
         )}{' '}
         <div className='card-btn-cnt'>
-          <button onClick={handleLeftClick}>
+          <button className='card-btn' onClick={handleLeftClick}>
             <MdOutlineKeyboardArrowLeft />
           </button>
-          <button onClick={handleRightClick}>
+          <button className='card-btn' onClick={handleRightClick}>
             <MdOutlineKeyboardArrowRight />
           </button>
         </div>
