@@ -22,8 +22,8 @@ const CardComp = () => {
     <div className='card-cnt'>
       <div className='card-first-cnt'>
         {isActive ? (
-          <div className='card-txt-cnt'>
-            <p className='card-txt'>
+          <div className='card-txt-cnt '>
+            <p className='card-txt color'>
               “ I’ve been interested in coding for a while but never taken the
               jump, until now. I couldn’t recommend this course enough. I’m now
               in the job of my dreams and so excited about the future. ”
@@ -34,7 +34,7 @@ const CardComp = () => {
             </div>
           </div>
         ) : (
-          <div className='card-txt-cnt'>
+          <div className='card-txt-cnt repeat'>
             <p className='card-txt'>
               “ If you want to lay the best foundation possible I’d recommend
               taking this course. The depth the instructors go into is
@@ -50,12 +50,12 @@ const CardComp = () => {
       </div>
       <div className='card-img-cnt'>
         {isActive ? (
-          <div className='img-cnt'>
-            <img className='img' src={tanya} alt='' />
+          <div className='img-cnt '>
+            <img className='img firstImg' src={tanya} alt='' />
           </div>
         ) : (
-          <div className='img-cnt'>
-            <img className='img' src={john} alt='' />
+          <div className='img-cnt secImg'>
+            <img className='img ' src={john} alt='' />
           </div>
         )}{' '}
         <div className='card-btn-cnt'>

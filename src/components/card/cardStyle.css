@@ -13,6 +13,8 @@
   background-repeat: no-repeat;
   background-position: 140px 170px;
   padding-left: 21%;
+  opacity: 1;
+  animation: transparency 0.5s linear;
 }
 
 .card-first-cnt {
@@ -26,14 +28,12 @@
   flex-direction: column;
   align-items: flex-end;
   width: 900px;
-  background-image: url('../../assests/img/pattern-bg.svg');
-  background-repeat: no-repeat;
-  background-position: 80px 90px;
 }
 
 .card-txt {
   font-family: 'Inter', sans-serif;
   font-size: 25px;
+  color: hsl(240, 81%, 75%);
 }
 
 .card-sub-cnt {
@@ -60,12 +60,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  bottom: 50px;
-  right: 275px;
+  bottom: 11%;
+  right: 28%;
   width: 100px;
   height: 50px;
   border-radius: 70px;
-  background-color: rgb(248, 237, 237);
+  background-color: rgb(244, 240, 240);
 }
 
 .card-btn {
@@ -74,6 +74,7 @@
   background-color: transparent;
   font-size: 35px;
   color: rgb(75, 70, 70);
+  cursor: pointer;
 }
 
 .card-name {
@@ -88,4 +89,83 @@
   font-weight: 500;
   font-size: 15px;
   font-family: 'Inter', sans-serif;
+}
+
+.repeat {
+  opacity: 1;
+  animation: transparency 0.5s linear;
+}
+@media screen and (max-width: 870px) {
+  .card-cnt {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: white;
+    height: 100%;
+    width: fit-content;
+    align-items: center;
+    position: initial;
+    overflow: hidden;
+    gap: 85px;
+    justify-content: flex-end;
+    padding-top: 10%;
+    background-image: url('../../assests/img/pattern-quotes.svg');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    padding-left: 0%;
+  }
+
+  .card-sub-cnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .card-first-cnt {
+    position: initial;
+    height: 20%;
+    width: 65%;
+  }
+  .card-btn-cnt {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 41%;
+    right: 39%;
+    width: 100px;
+    height: 50px;
+    border-radius: 70px;
+    background-color: rgb(244, 240, 240);
+  }
+  .img {
+    height: 350px;
+  }
+  .card-img-cnt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+  }
+  .card-txt {
+    font-family: 'Inter', sans-serif;
+    font-size: 21px;
+    color: hsl(240, 81%, 75%);
+  }
+}
+
+@keyframes transparency {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.color {
+  color: hsl(240, 100%, 4%);
+  opacity: 1;
+  animation: transparency 0.5s linear;
 }
